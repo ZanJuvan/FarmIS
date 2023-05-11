@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset>
+        <field
+            name="id"
+            type="hidden"
+            label="JGLOBAL_FIELD_ID_LABEL"
+            default="0"
+            class="readonly"
+            readonly="true"
+        />
+        <field
+            name="name"
+            type="text"
+            label="Ime"
+        />
+
+        <field
+            name="size"
+            type="number"
+            label="Velikost [Ar]"
+            min="0"
+        />
+        <field
+                name="num_plot"
+                type="text"
+                label="Št. parcele"
+        />
+
+        <field
+                name="type"
+                type="radio"
+                label="Tip"
+                class="btn-group"
+                default="Travnik"
+        >
+            <option value="Travnik">Travnik</option>
+            <option value="Gozd">Gozd</option>
+            <option value="Pašnik">Pašnik</option>
+            <option value="Objekt">Objekt</option>
+        </field>
+
+
+    </fieldset>
+</form>

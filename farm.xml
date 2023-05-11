@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<extension type="component" method="upgrade">
+	<name>COM_FARM</name>
+	<creationDate>April 2023</creationDate>
+	<author>Žan Juvan</author>
+	<authorEmail>zan.juvan01@gmail.com</authorEmail>
+	<license>GNU General Public License version 2 or later;</license>
+	<version>1.1.0</version>
+	<description>COM_FARM_XML_DESCRIPTION</description>
+	<namespace path="src">FarmNamespace\Component\Farm</namespace>
+	<scriptfile>script.php</scriptfile>
+	<!-- Back-end files -->
+	<administration>
+		<!-- Menu entries -->
+		<menu view="farm">COM_FARM</menu>
+		<submenu>
+			<menu link="option=com_farm">COM_FARM_DASHBOARD</menu>
+			<menu link="option=com_farm&amp;view=jobs">COM_FARM_JOBS</menu>
+			<menu link="option=com_farm&amp;view=fields">COM_FARM_FIELDS</menu>
+			<menu link="option=com_farm&amp;view=animals">COM_FARM_ANIMALS</menu>
+			<menu link="option=com_farm&amp;view=equipments">COM_FARM_EQUIPMENTS</menu>
+			<menu link="option=com_farm&amp;view=services">COM_FARM_SERVICES</menu>
+		</submenu>
+		<files folder="administrator/components/com_farm">
+			<filename>farm.xml</filename>
+			<folder>forms</folder>
+			<folder>layouts</folder>
+			<folder>services</folder>
+			<folder>src</folder>
+			<folder>tmpl</folder>
+			<folder>language</folder>
+		</files>
+	</administration>
+	<dlid prefix="dlid=" suffix="" />
+</extension>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset>
+        <field
+                name="id"
+                type="hidden"
+                label="JGLOBAL_FIELD_ID_LABEL"
+                default="0"
+                class="readonly"
+                readonly="true"
+        />
+        <field
+                name="name"
+                type="text"
+                label="Ime"
+                showon="type:0,1"
+        />
+
+        <field
+                name="type"
+                type="radio"
+                label="Tip"
+                class="btn-group"
+                default="0"
+        >
+            <option value="0">Govedo</option>
+            <option value="1">Koza</option>
+            <option value="2">Kokoši</option>
+            <option value="3">Piščanci</option>
+        </field>
+
+        <field
+                name="number"
+                type="number"
+                label="Število"
+                showon="type:2,3"
+        />
+
+        <field
+                name="code"
+                type="text"
+                label="Koda"
+                showon="type:0,1"
+        />
+
+
+        <field
+                name="sex"
+                type="radio"
+                label="Spol"
+                class="btn-group"
+                default="0"
+                showon="type:0,1"
+        >
+            <option value="0">Ženski</option>
+            <option value="1">Moški</option>
+        </field>
+        <field
+                name="birthdate"
+                type="calendar"
+                label="Rojstvo"
+                showtime="false"
+                default="NOW"
+        />
+
+
+
+
+    </fieldset>
+</form>

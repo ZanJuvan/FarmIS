@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset>
+        <field
+                name="id"
+                type="hidden"
+                label="JGLOBAL_FIELD_ID_LABEL"
+                default="0"
+                class="readonly"
+                readonly="true"
+        />
+
+        <field
+                name="title"
+                type="text"
+                label="Naslov"
+        />
+
+        <field
+                name="description"
+                type="textarea"
+                label="Opis"
+        />
+
+        <field
+                name="type"
+                type="text"
+                label="Vrsta"
+        />
+
+        <field
+                name="date"
+                type="calendar"
+                label="Datum"
+                showtime="false"
+                default="NOW"
+        />
+
+        <field
+                name="equipment_id"
+                type="sql"
+                label="Stroj"
+                sql_select="e.id, e.model, CONCAT(e.manufacturer, ' ',e.model) AS extra"
+                sql_from="#__farm_equipment AS e"
+                sql_order="e.model ASC"
+                key_field="id"
+                value_field="extra"
+        >
+            <option value="-1">Vsi</option>
+        </field>
+
+
+    </fieldset>
+</form>

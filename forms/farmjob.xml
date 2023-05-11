@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset>
+        <field
+            name="id"
+            type="hidden"
+            label="JGLOBAL_FIELD_ID_LABEL"
+            default="0"
+            class="readonly"
+            readonly="true"
+        />
+        <field
+            name="field_id"
+            type="sql"
+            label="Površina"
+            sql_select="e.*"
+            sql_from="#__farm_field AS e"
+            sql_order="e.name ASC"
+            key_field="id"
+            value_field="name"
+        />
+
+        <field
+            name="type"
+            type="text"
+            label="Vrsta"
+        />
+
+        <field
+            name="number"
+            type="number"
+            label="Število"
+            default="1"
+            min="0"
+        />
+        <field
+            name="date"
+            type="calendar"
+            label="Datum"
+            showtime="false"
+            default="NOW"
+        />
+
+    </fieldset>
+</form>
